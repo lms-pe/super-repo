@@ -1,0 +1,24 @@
+[module "71830b0f-3cc0-3a0b-bad1-3910db053ad0"]
+	conflict = request-pull
+	path = myrepo1
+	pull = merge rebase
+	pull = squash never
+	ref = if refs/heads/main sync refs/heads/main
+	url = agnostic://gh/697699271
+[module "98af41e7-f319-3b96-a8fb-8b2fdd0c7e62"]
+	conflict = request-pull
+	path = myrepo2
+	pull = merge rebase
+	pull = squash never
+	ref = if refs/heads/main sync refs/heads/main
+	url = agnostic://gh/697699386
+[map "be1b43a9-2ad0-3620-a4ac-80ade3d32953"]
+	object = 101330bd1b6ce84620842134879a3eb9eb8d46df
+	path = myrepo1
+	stage = sync
+	type = extract module
+[map "310611b6-4fde-3bf4-a757-14d9f57896d0"]
+	object = 5d3525000dafc3312bbd46d3e925d2cc926c781f
+	path = myrepo2
+	stage = sync
+	type = extract module
